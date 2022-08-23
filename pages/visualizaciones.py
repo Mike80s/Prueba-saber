@@ -36,11 +36,11 @@ layout = dbc.Container(
                     dcc.Dropdown(id='My_dropdown',
                                  options=[
                                      {'label': 'Internet en la familia', 'value': 'Tiene internet en casa'},
-                                     {'label': 'Género del estudiante', 'value': 'Género del estudiante'},
+
                                      {'label': 'Número de libros en casa', 'value': 'Número de libros en casa'},
-                                     {'label': 'Número de personas en el hogar', 'value': 'Número de personas en el hogar'},
+
                                      {'label': 'Estrato socio económico', 'value': 'Estrato socioeconómico'},
-                                     {'label': 'Ubicación', 'value':  'Sector rural o urbano'},
+
                                      {'label': 'Tiempo de lectura', 'value':   'Tiempo de lectura diaria'}
                                  ],
                                  value='Tiene internet en casa'

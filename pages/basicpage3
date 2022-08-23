@@ -1,0 +1,50 @@
+
+import dash
+from dash import Dash, html, dcc
+import dash_bootstrap_components as dbc
+from dash_labs.plugins import register_page
+import dash_core_components as dcc
+import dash_html_components as html
+
+# Data
+import pandas as pd
+import dash_labs as dl
+
+# Visualisation
+import seaborn as sns
+import plotly.express as px
+df = pd.read_csv("data.csv")
+# dash-labs plugin call, menu name and route
+register_page(__name__, path='/bascipage3')
+
+
+# specific layout for this page
+
+
+layout = dbc.Container(
+    [
+        dbc.Row([
+            dbc.Col([
+                html.H1(['SABER 11']),
+
+                html.Div([
+
+                    dcc.Dropdown(id='My_dropdown',
+                                 options=[
+                                     {'label': 'Internet en la familia', 'value': 'FAMI_TIENEINTERNET'},
+                                     {'label': 'Género del estudiante', 'value': 'ESTU_GENERO'},
+                                     {'label': 'Número de libros en casa', 'value': 'FAMI_NUMLIBROS'},
+                                     {'label': 'Número de personas en el hogar', 'value': 'FAMI_PERSONASHOGAR'},
+                                     {'label': 'Estrato socio económico', 'value': 'FAMI_ESTRATOVIVIENDA'}
+                                 ],
+                                 value='FAMI_TIENEINTERNET'
+                    )
+
+                ])
+
+        ], lg=12),
+            html.Div([
+                dcc.Graph(id='the_graph')
+            ])
+    ])
+    ])

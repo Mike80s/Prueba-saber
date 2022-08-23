@@ -1,0 +1,27 @@
+html.Img(src='https://ingresealau.edu.co/wp-content/uploads/2022/02/logo-icfes-saber-11.png', width=400),
+    html.H1(children= "   Análisis de las pruebas Saber 11 año 2019"),
+            dcc.Dropdown(id='My_dropdown',
+            options=[
+                    {'label':'Internet en la familia','value':'FAMI_TIENEINTERNET'},
+                    {'label':'Género del estudiante', 'value':'ESTU_GENERO'},
+                    {'label':'Número de libros en casa','value':'FAMI_NUMLIBROS'},
+                    {'label':'Número de personas en el hogar','value':'FAMI_PERSONASHOGAR'},
+                    {'label':'Estrato socio económico','value':'FAMI_ESTRATOVIVIENDA'}
+            ],
+            value='FAMI_NUMLIBROS'
+            ),
+
+            html.Div([
+            dcc.Graph(id='the_graph')
+            ]),
+
+
+@app.callback(
+    Output(component_id='the_graph', component_property='figure'),
+    Input(component_id='My_dropdown', component_property='value')
+)
+def update_the_graph(My_dropdown):
+        df14=df[[My_dropdown,'PUNT_GLOBAL']].groupby([My_dropdown]).mean()
+        df14=df14.reset_index()
+        figure = px.bar(df14, x=My_dropdown, y='PUNT_GLOBAL')
+        return figure

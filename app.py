@@ -35,10 +35,11 @@ app = dash.Dash(__name__, plugins=[dl.plugins.pages], requests_pathname_prefix=r
 server=app.server
 
 
+
 #Top menu, items get from all pages registered with plugin.pages
 navbar = dbc.NavbarSimple([
 
-    dbc.NavItem(dbc.NavLink( "Secretaría de educación del distrito de Bogotá", href=request_path_prefix)),
+    dbc.NavItem(dbc.NavLink( "Fabián Ramos Hernández mframosh@unal.edu.co", href=request_path_prefix)),
     dbc.DropdownMenu(
         [
           dbc.DropdownMenuItem(page["name"], href=request_path_prefix or page["path"])

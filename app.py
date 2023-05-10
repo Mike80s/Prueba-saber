@@ -28,7 +28,7 @@ request_path_prefix = None
 
 
 df = pd.read_csv("data.csv")
-heroku create
+
 
 # Dash instance declaration
 app = dash.Dash(__name__, plugins=[dl.plugins.pages], requests_pathname_prefix=request_path_prefix, external_stylesheets=[dbc.themes.FLATLY],)

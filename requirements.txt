@@ -62,6 +62,7 @@ six==1.16.0
 stack-data==0.4.0
 tenacity==8.0.1
 tornado==6.2
+tqdm==4.65.0
 traitlets==5.3.0
 urllib3==1.26.11
 wcwidth==0.2.5

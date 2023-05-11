@@ -38,7 +38,6 @@ layout = dbc.Container(
                                      {'label': 'Tiene internet en casa', 'value': 'Tiene internet en casa'},
 
                                      {'label': 'Número de libros en casa', 'value':'Número de libros en casa'},
-
                                      {'label': 'Estrato socioeconómico', 'value': 'Estrato socioeconómico'},
 
                                      {'label': 'Tiempo de lectura diaria', 'value': 'Tiempo de lectura diaria'}

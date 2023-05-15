@@ -17,9 +17,8 @@ import dash_bootstrap_components as dbc
 # Data
 import pandas as pd
 
-
 # Visualisation
-import seaborn as sns
+#import seaborn as sns
 import plotly.express as px
 #from callbacks import register_callbacks
 import plotly.graph_objects as go

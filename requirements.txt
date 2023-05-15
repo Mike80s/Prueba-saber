@@ -69,7 +69,7 @@ jupyter-client==7.3.4
 jupyter-core==4.11.1
 jupyter-dash==0.4.2
 kiwisolver==1.4.4
-llvmlite~=0.38.0
+llvmlite<=0.38.0
 locket==1.0.0
 lxml==4.9.2
 MarkupSafe==2.1.1

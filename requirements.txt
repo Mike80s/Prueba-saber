@@ -44,7 +44,7 @@ fast-histogram==0.11
 Flask==2.2.2
 Flask-Compress==1.12
 fonttools==4.36.0
-fsspec==2023.5.0
+fsspec<=2023.5.0
 glue-core==1.10.0
 glue-vispy-viewers==0.12.2
 gunicorn==19.7.1

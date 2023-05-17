@@ -47,7 +47,7 @@ fonttools==4.36.0
 fsspec==2023.5.0
 glue-core==1.10.0
 glue-vispy-viewers==0.12.2
-gunicorn==20.1.0
+gunicorn==19.7.1
 h5py==3.8.0
 HeapDict==1.0.1
 idna==3.3

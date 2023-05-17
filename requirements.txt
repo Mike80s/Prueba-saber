@@ -12,7 +12,7 @@ bkcharts==0.2
 black==19.10b0
 Brotli==1.0.9
 brotlipy==0.7.0
-casa-formats-io==0.2.1
+casa-formats-io~=0.2.1
 certifi==2022.6.15
 cffi==1.15.1
 charset-normalizer==2.1.1

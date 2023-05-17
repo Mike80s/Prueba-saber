@@ -154,4 +154,4 @@ Werkzeug==2.2.2
 xlrd==2.0.1
 xlwings==v0.26.0
 zict==2.0.0
-zipp==3.7
+zipp==3.6.0

@@ -11,14 +11,10 @@ import dash_core_components as dcc
 import dash_html_components as html
 import dash_bootstrap_components as dbc
 
-
-
-
-# Data
 import pandas as pd
 
 # Visualisation
-#import seaborn as sns
+import seaborn as sns
 import plotly.express as px
 #from callbacks import register_callbacks
 import plotly.graph_objects as go

@@ -152,6 +152,6 @@ wcwidth==0.2.5
 webencodings==0.5.1
 Werkzeug==2.2.2
 xlrd==2.0.1
-xlwings==0.24.9
+xlwings<=0.24.9
 zict==2.0.0
 zipp==3.8.1
